@@ -1,0 +1,54 @@
+.mermaid-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #282c34;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mermaid-navbar select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #3a3f4b;
+  background-color: #1e1e2e;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.mermaid-navbar select:focus {
+  border-color: #61dafb;
+}
+
+.diagram-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.diagram-controls button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.diagram-controls button:hover {
+  background-color: #21a1f1;
+}
+
+.mermaid-container {
+  background: #1e1e2e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+  overflow: auto;
+  transition: transform 0.2s ease-in-out;
+}

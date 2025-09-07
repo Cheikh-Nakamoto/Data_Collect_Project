@@ -1,0 +1,14 @@
+<div class="mermaid-navbar">
+  <select (change)="onDiagramSelected($event)" [ngModel]="selectedDiagram?.name" aria-label="Select Mermaid Diagram">
+    <option *ngFor="let diagram of diagrams" [value]="diagram.name">
+      {{ diagram.name }}
+    </option>
+  </select>
+  <div class="diagram-controls">
+    <button (click)="zoomIn()">🔍 +</button>
+    <button (click)="zoomOut()">🔍 −</button>
+    <button (click)="resetZoom()">🔄 Reset</button>
+  </div>
+</div>
+
+<div #mermaidContainer class="mermaid-container"></div>
